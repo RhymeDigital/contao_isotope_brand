@@ -1,0 +1,17 @@
+<nav class="mod_navigation block" role="navigation">
+<?php if(!empty($this->brands)): ?>
+<div class="block inside">
+<h2><?php echo $this->headline; ?></h2>
+<?php if($this->message): ?>
+<p class="<?php echo $this->type; ?> message"><?php echo $this->message; ?></p>
+<?php endif; ?>
+<ul class="level_1">
+<?php foreach ($this->brands as $brand): ?>
+<li<?php if ($brand['class']) : echo ' class="'.$brand['class'].'"';  endif; ?>>
+<?php echo $brand['html']; ?>
+</li>
+<?php endforeach; ?>
+</ul>
+</div>
+<?php endif; ?>
+</div>

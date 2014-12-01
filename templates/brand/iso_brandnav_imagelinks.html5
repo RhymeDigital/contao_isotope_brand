@@ -1,0 +1,3 @@
+<p>
+<a title="<?php echo $this->name; ?>" href="<?php echo $this->url;?>"><img src="<?php echo $this->src; ?>" itemprop="image" alt="<?php echo $this->name; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>"></a>
+</p>

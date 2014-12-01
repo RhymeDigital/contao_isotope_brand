@@ -1,0 +1,15 @@
+﻿========================================
+Isotope brands - Contao module CHANGELOG
+========================================
+
+
+Version 1.01 (2014-04-24)
+--------------------------
+- added Addslashes to getBrandData data model 
+
+
+
+Version 1.0 (2014-03-17)
+--------------------------
+- Initial Release
+

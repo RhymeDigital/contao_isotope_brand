@@ -1,0 +1,29 @@
+<style>
+.mod_iso_brandlist img {width:auto;}
+</style>
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<?php if ($this->headline): ?>
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+<p>
+<?php if ($this->brandSrc): ?>
+<img src="<?php echo $this->brandSrc; ?>" itemprop="image" alt="<?php echo $this->brandName; ?>" width="<?php echo $this->brandWidth; ?>" height="<?php echo $this->brandHeight; ?>">
+<?php endif; ?>
+<?php if ($this->brandDescription): ?>
+<?php echo $this->brandDescription; ?>
+<?php endif; ?>
+</p>
+<?php if($this->message): ?>
+<p class="<?php echo $this->type; ?> message"><?php echo $this->message; ?></p>
+<?php endif; ?>
+<?php if(!empty($this->products)): ?>
+<div class="product_list">
+<?php foreach ($this->products as $product): ?>
+<div<?php echo $product['cssID']; ?> class="col span_1_of_4 <?php echo $product['class']; ?>">
+<?php echo $product['html']; ?>
+</div>
+<?php endforeach; ?>
+</div>
+<?php echo $this->pagination; ?>
+<?php endif; ?>
+</div>
